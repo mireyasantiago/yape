@@ -18,7 +18,10 @@ var cargarDatos= function(){
   });
 };
 */
-alert("sdfd");
 $(document).ready(function(){
-  $('.carousel').carousel();
-});
+      $('.carousel').carousel();
+    });
+
+    $(document).ready(function(){
+          $('.carousel.carousel-slider').carousel({fullWidth: true});
+        });

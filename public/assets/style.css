@@ -1,3 +1,12 @@
-body{
-  color: pink;
+.contenedor__margen--arriba{
+  margin-top: 20%;
+}
+.letra--resaltada-negra{
+  font-weight: bold;
+}
+.imagen{
+  height: 800px;
+}
+.altura{
+  height: 150%;
 }
