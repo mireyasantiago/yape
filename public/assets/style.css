@@ -1,7 +1,7 @@
 .contenedor__margen--arriba{
-  margin-top: 20%;
+  margin-top: 30%;
 }
-.letra--resaltada-negra{
+.letra--negra{
   font-weight: bold;
 }
 .imagen{
@@ -9,4 +9,24 @@
 }
 .altura{
   height: 150%;
+}
+.letra__color-azul{
+  color: #18ffff ;
+  display: inline-block;
+}
+.texto--grande{
+  font-size: 40px;
+  color: #616161;
+}
+.boton__color--amarillo{
+  background-color: yellow;
+  padding: 10px 20px 10px 20px;
+  height: 100px;
+}
+.texto--center{
+  text-align: center;
+
+}
+.margen--secciones{
+  margin: 10% 0 10% 0;
 }

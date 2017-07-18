@@ -5,17 +5,59 @@
     <title>Proyecto final 6</title>
     <!--<link rel="stylesheet" href="/static/materialize-css/dist/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
   </head>
   <body>
 
-    
+    <div class="container contenedor__margen--arriba">
+
+      <div class="row margen--secciones">
+        <div class="col s4 offset-s4 col xl4 offset-xl4">
+          <div class="">
+            <img src="../img/icons/bcp-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row margen--secciones">
+        <h2 class="texto--center letra--negra">Para comenzar validemos tu <br>
+          numero</h2>
+        <p class="texto--grande">recibirás un SMS con un codigo de validacion</p>
+      </div>
+
+      <form action="#">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1"><img src="../img/icons/phoneandnumber.png" alt=""></label>
+          </div>
+        </div>
+        <div class="row">
+          <p >
+            <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+            <p for="filled-in-box" class="texto--grande">Acepto los <big class="letra__color-azul">Terminos y Condicciones</big> </p>
+          </p>
+        </div>
+
+        <div class="row margen--secciones">
+          <div class="col s4 offset-s4 col xl4 offset-xl5">
+            <button class="btn waves-effect boton__color--amarillo texto--grande white-text" type="submit" name="action">Continuar</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+
+
+
+
 
 
     <!--<script type="text/javascript" src="/static/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/static/materialize-css/dist/js/materialize.min.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
   </body>
 </html>
