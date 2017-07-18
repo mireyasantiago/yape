@@ -23,6 +23,7 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
+  //res.sendFile(__dirname+'/index.html');
 });
 
 app.use('/api',apiUsers(router,db));
@@ -32,6 +33,7 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log('Server running on port '+port+'!');
 });
+
 
 
 // crear las rutas de trrabajos
