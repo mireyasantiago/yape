@@ -30,3 +30,13 @@
 .margen--secciones{
   margin: 10% 0 10% 0;
 }
+.contenedor--carrusel{
+width: 100%;
+height: 100%;
+
+}
+.carousel .carousel-item>img{
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+}
