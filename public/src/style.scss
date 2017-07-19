@@ -1,0 +1,52 @@
+@import 'variables';//importa del documento
+@import 'mixin';
+
+.contenedor__margen--arriba{
+  margin-top: 30%;
+}
+.letra--negra{
+  font-weight: bold;
+}
+.imagen{
+  height: 800px;
+}
+.altura{
+  height: 150%;
+}
+.letra__color-azul{
+  color: #18ffff ;
+  display: inline-block;
+}
+.texto--grande{
+  font-size: 40px;
+  color: #616161;
+}
+.boton__color--amarillo{
+  background-color: yellow;
+  padding: 10px 20px 10px 20px;
+  height: 100px;
+}
+.texto--center{
+  text-align: center;
+
+}
+.margen--secciones{
+  margin: 10% 0 10% 0;
+}
+
+div.carousel.carousel-slider.center.initialized {
+    height: 25vh !important;
+    margin-top: 10vh;
+}
+
+.carousel .indicators .indicator-item {
+  @include bloque-indicadores(#A9A9A9, 20px, 20px);
+  margin-right: 25px;
+}
+.carousel .indicators .indicator-item.active {
+  @include bloque-indicadores(red, 20px, 20px);
+  border-radius: 50%;
+}
+.carousel .carousel-item > img {
+  width: 40%;
+}
