@@ -51,6 +51,9 @@
 .margen--abajo {
   margin-bottom: 0; }
 
+hr {
+  width: 100%; }
+
 div.carousel.carousel-slider {
   height: 25vh !important;
   margin-top: 10vh; }

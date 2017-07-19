@@ -1,23 +1,4 @@
-/*var api={
-  url:"api/users.js" //ruta de la api
-};
 
-var cargarPagina = function(){
-  cargarApi();
-};
-
-var cargarApi = function(){
-  $.getJSON(api.url, function(datos){
-    datos.forEach(cargarDatos);
-  });
-};
-
-var cargarDatos= function(){
-  $.getJSON(api.url, function(elementos){
-    elementos.forEach(mostrar)
-  });
-};
-*/
 
 // funcion de materalixe para el carrusel
 $(document).ready(function(){
@@ -38,6 +19,7 @@ var validar= function(e){
   var longitudTel= telefono.val().length;
   e.preventDefault(); //Evita la recarga de la paginas
    if( longitudTel <= 9 ) {
+  // botonF.attr('disabled',true);
     botonF.addClass('disabled');
      //return false;
   }
