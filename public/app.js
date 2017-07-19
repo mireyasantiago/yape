@@ -35,24 +35,22 @@ al formulario  no al boton*/
 
   var validar= function(e){
     var telefono= $("#telefono");
-    e.preventDefault(); //Evita la recarga de la pagina
-    if(isNaN(telefono.val())  ) {
-      $(this).prop('disabled', false);
-      //alert("Ingrese solo numeros y seleccione terminos");
-      //  return false;
-      //$("#formulario").removeClass("disabled");
+    var botonF= $("#boton");
+    e.preventDefault(); //Evita la recarga de la paginas
+    if(isNaN(telefono.val()) ) {
+      botonF.attr('disabled', true);
+        //return false;
     }
-    else if(telefono.val().length < 9 || telefono.val().length===0) {
-      $(this).prop('disabled', false);
-      //alert("ingrese al menos 9 caracteres");
-      //    return false;
+    else if(telefono.val().length < 9 || telefono.val().length < 1) {
+      botonF.attr('disabled', true)
+       //return false;
     }
-  /*  else{
-      $("#formulario").addClass("disabled");
-    }*/
+    else{
+      botonF.attr('disabled', false)
+    }
   }
-
-
-
   $(document).ready(validarTelefono);
 }());
+
+
+        $('#boton_enviar').attr('disabled', true);
