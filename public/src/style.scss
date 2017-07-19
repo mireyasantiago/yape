@@ -14,39 +14,42 @@
   height: 150%;
 }
 .letra__color-azul{
-  color: #18ffff ;
+  color: $turquesa-terminos;
   display: inline-block;
 }
 .texto--grande{
   font-size: 40px;
-  color: #616161;
+  color: $color-GrisLetra;
 }
 .boton__color--amarillo{
-  background-color: yellow;
+  background-color: $Amarilloboton;
   padding: 10px 20px 10px 20px;
   height: 100px;
 }
 .texto--center{
   text-align: center;
-
 }
 .margen--secciones{
   margin: 10% 0 10% 0;
 }
 
-div.carousel.carousel-slider.center.initialized {
+div.carousel.carousel-slider{
     height: 25vh !important;
     margin-top: 10vh;
 }
 
 .carousel .indicators .indicator-item {
-  @include bloque-indicadores(#A9A9A9, 20px, 20px);
+  @include bloque-indicadores($Gris-bullet, 20px, 20px);
   margin-right: 25px;
 }
 .carousel .indicators .indicator-item.active {
-  @include bloque-indicadores(red, 20px, 20px);
+  @include bloque-indicadores( $Rojo-bullet, 20px, 20px);
   border-radius: 50%;
 }
-.carousel .carousel-item > img {
-  width: 40%;
+.carousel{
+  .carousel-item{
+    img {
+      width: 40%;
+    }
+  }
 }

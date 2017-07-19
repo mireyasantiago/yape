@@ -11,15 +11,15 @@
   height: 150%; }
 
 .letra__color-azul {
-  color: #18ffff;
+  color: #00c3a3;
   display: inline-block; }
 
 .texto--grande {
   font-size: 40px;
-  color: #616161; }
+  color: #8f8f8f; }
 
 .boton__color--amarillo {
-  background-color: yellow;
+  background-color: #fbd43b;
   padding: 10px 20px 10px 20px;
   height: 100px; }
 
@@ -29,23 +29,23 @@
 .margen--secciones {
   margin: 10% 0 10% 0; }
 
-div.carousel.carousel-slider.center.initialized {
+div.carousel.carousel-slider {
   height: 25vh !important;
   margin-top: 10vh; }
 
 .carousel .indicators .indicator-item {
-  background-color: #A9A9A9;
+  background-color: #f8f8f8;
   width: 20px;
   height: 20px;
   margin-right: 25px; }
 
 .carousel .indicators .indicator-item.active {
-  background-color: red;
+  background-color: #f64552;
   width: 20px;
   height: 20px;
   border-radius: 50%; }
 
-.carousel .carousel-item > img {
+.carousel .carousel-item img {
   width: 40%; }
 
 /*# sourceMappingURL=style.css.map */
