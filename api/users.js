@@ -2,7 +2,7 @@ var rn = require('random-number');
 
 module.exports = (router,db) => {
 
-  router.post('/registerNumber',(req, res) => {
+  router.post('/registerNumber',(req, res) => {//el metodo http es post
 
     const userid = req.body.phone;
     const terms  = req.body.terms;
@@ -32,7 +32,7 @@ module.exports = (router,db) => {
       res.json({success: false, message: "Parametros incorrectos", data: req.body});
     }
   });
-
+//
   router.post('/resendCode',(req, res) => {
     const userId = req.body.phone;
     if (userId) {

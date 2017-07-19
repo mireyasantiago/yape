@@ -4,6 +4,12 @@
 .contenedor__margen--arriba{
   margin-top: 30%;
 }
+.color__moradoClaro{
+  background-color: $Morado-light;
+}
+.color__moradoFuerte{
+  background-color: $Morado-dark;
+}
 .letra--negra{
   font-weight: bold;
 }
@@ -32,7 +38,16 @@
 .margen--secciones{
   margin: 10% 0 10% 0;
 }
+.padding--secciones{
+  padding: 10% 0 10% 0;
+}
+.padding--moradoFuerte{
+  padding: 20px;
 
+}
+.margen--abajo{
+  margin-bottom: 0 ;
+}
 div.carousel.carousel-slider{
     height: 25vh !important;
     margin-top: 10vh;

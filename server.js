@@ -15,10 +15,10 @@ const format = morganjson({
   length: ':res[content-length]',
   'response-time': ':response-time ms'
 });
-
+//parte de la configuracion
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(bodyParser.json());//dependencia para devolver un json
+app.use(express.static('public'));//
 app.use(morgan(format));
 app.use('/static',express.static(path.join(__dirname,'node_modules')));//para accerder a materalize y jquery
 
@@ -26,10 +26,12 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
-  res.sendFile(__dirname+'/index.html'); // para llamar a mi index
-  res.sendFile(__dirname+'/pantalla.html');
+  //res.sendFile(__dirname+'/public/index.html');
+  res.sendFile(__dirname+'/index.html'); // cambio public para llamar a mi index
+
 });
 
+//parte de la api
 app.use('/api',apiUsers(router,db));
 
 const port = process.env.PORT || 3000;

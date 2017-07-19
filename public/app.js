@@ -24,33 +24,27 @@ $(document).ready(function(){
       $('.carousel').carousel();
 });
 
-
 /* cuando se crean las validaciones, recordar que el evento submit se da
 al formulario  no al boton*/
-(function(){
-  var validarTelefono= function(){
 
-    $("#formulario").submit(validar);
+var validarTelefono= function(){
+  var formulario= $("#formulario");
+  formulario.submit(validar);
+}
+
+var validar= function(e){
+  var telefono= $("#telefono");
+  var botonF= $("#boton");
+  var longitudTel= telefono.val().length;
+  e.preventDefault(); //Evita la recarga de la paginas
+   if( longitudTel <= 9 ) {
+    botonF.addClass('disabled');
+     //return false;
   }
-
-  var validar= function(e){
-    var telefono= $("#telefono");
-    var botonF= $("#boton");
-    e.preventDefault(); //Evita la recarga de la paginas
-    if(isNaN(telefono.val()) ) {
-      botonF.attr('disabled', true);
-        //return false;
-    }
-    else if(telefono.val().length < 9 || telefono.val().length < 1) {
-      botonF.attr('disabled', true)
-       //return false;
-    }
-    else{
-      botonF.attr('disabled', false)
-    }
+  else{
+  botonF.removeClass('disabled');
+  //  return true;
   }
-  $(document).ready(validarTelefono);
-}());
+}
 
-
-        $('#boton_enviar').attr('disabled', true);
+$(document).ready(validarTelefono);
