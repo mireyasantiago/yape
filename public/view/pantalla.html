@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final 6</title>
     <!--<link rel="stylesheet" href="/static/materialize-css/dist/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
@@ -14,33 +15,32 @@
       <div class="row margen--secciones">
         <div class="col s4 offset-s4 col xl4 offset-xl4">
           <div class="">
-            <img src="../img/icons/phone.png" alt="">
+            <img src="../img/icons/phone.png" class="responsive-img" alt="">
           </div>
         </div>
       </div>
 
       <div class="row margen--secciones">
-        <h2 class="texto--center letra--negra">Para comenzar validemos tu <br>
-          numero</h2>
-        <p class="texto--grande">recibirás un SMS con un codigo de validacion</p>
+        <h2 class="texto--center letra--negra">Para comenzar validemos tu <br> numero</h2>
+        <p class="texto--center">recibirás un SMS con un codigo de validacion</p>
       </div>
 
       <form action="#" id="formulario">
         <div class="row">
           <div class="input-field col s12">
             <input id="telefono" type="number" name="telefono" value="">
-            <label  ><img src="../img/icons/phoneandnumber.png" alt=""></label>
+            <label for="telefono"><img src="../img/icons/phoneandnumber.png" class="imagen--icono responsive-img" alt=""></label>
           </div>
         </div>
         <div class="row">
           <p>
             <input type="checkbox" class="filled-in" id="termino-condiccion"  />
-            <label for="termino-condiccion" class="texto--grande">Acepto los <big class="letra__color-azul">Terminos y Condicciones</big></label>
+            <label for="termino-condiccion" >Acepto los <big class="letra__color-azul">Terminos y Condicciones</big></label>
           </p>
         </div>
         <div class="row margen--secciones">
           <div class="col s4 offset-s4 col xl4 offset-xl5">
-            <button  class="disabled btn waves-effect boton__color--amarillo texto--grande white-text" id="boton" type="submit" name="action">Continuar</button>
+            <button  class="disabled btn waves-effect boton__color--amarillo  white-text" id="boton" type="submit" name="action">Continuar</button>
           </div>
         </div>
       </form>

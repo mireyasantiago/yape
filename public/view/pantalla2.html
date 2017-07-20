@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <div class="container contenedor__margen--arriba">
+    <div class="container ">
 
       <div class="row margen--secciones">
         <div class="col s4 offset-s4 col xl4 offset-xl4">
@@ -21,20 +21,41 @@
       </div>
 
       <div class="row margen--secciones">
-        <h2 class="texto--center letra--negra texto--center">Crea tu Usuario Yape</h2>
-        <p >Ingresa un nombre, email y clave de usuario.</p>
+        <h2 class=" letra--negra texto--center">Crea tu Usuario Yape</h2>
+        <p class="texto--center" >Ingresa un nombre, email y clave de usuario.</p>
       </div>
 
+      <form action="#" id="formulario">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="telefono" placeholder="nombre" type="number" name="telefono" value="">
+            <label for="telefono" ><img src="../img/icons/user.png" class="responsive-img imagen--icono-chico"alt=""></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="telefono" placeholder="correo@ejemplo.com"type="number" name="telefono" value="">
+            <label for="telefono" ><img src="../img/icons/message-gray.png" class="responsive-img imagen--icono-chico"alt=""></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="telefono" placeholder="ingresa clave de 6 digitos" type="number" name="telefono" value="">
+            <label for="telefono" ><img src="../img/icons/lock.png" class="responsive-img imagen--icono-chico" alt=""></label>
+          </div>
+          <p class="texto--center texto--gris">Cuida esta clave como oro, es tu ingreso a <br>Yape</p>
+        </div>
+
+        <div class="row margen--secciones">
+          <div class="col s4 offset-s4 col xl4 offset-xl5">
+            <button  class="disabled btn waves-effect boton__color--amarillo  white-text" id="boton" type="submit" name="action">Continuar</button>
+          </div>
+        </div>
+      </form>
+
     </div>
-
-
-
-
-
-
-
-
-
 
     <!--<script type="text/javascript" src="/static/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/static/materialize-css/dist/js/materialize.min.js"></script> -->

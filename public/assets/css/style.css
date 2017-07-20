@@ -17,6 +17,9 @@
   .imagen--icono {
     width: 40px; }
 
+  .imagen--icono-chico {
+    width: 20px; }
+
   .imagen--carrusel {
     width: 120px !important;
     height: 180px !important;
@@ -53,8 +56,7 @@
   color: #00c3a3;
   display: inline-block; }
 
-.texto--grande {
-  font-size: 40px;
+.texto--gris {
   color: #8f8f8f; }
 
 .boton__color--amarillo {
@@ -94,6 +96,9 @@ div.carousel.carousel-slider {
   height: 50vh !important;
   margin-top: 5vh;
   width: 100%; }
+
+#fondo--amarillo {
+  background-color: #fbd43b; }
 
 .carousel .indicators .indicator-item {
   background-color: #f8f8f8;

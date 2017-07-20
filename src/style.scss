@@ -28,8 +28,7 @@
   color: $turquesa-terminos;
   display: inline-block;
 }
-.texto--grande{
-  font-size: 40px;
+.texto--gris{
   color: $color-GrisLetra;
 }
 .boton__color--amarillo{
@@ -71,7 +70,9 @@ div.carousel.carousel-slider{
     margin-top: 5vh;
     width: 100%;
 }
-
+#fondo--amarillo{
+  background-color: $Amarilloboton;
+}
 .carousel .indicators .indicator-item {
   @include bloque-indicadores($Gris-bullet, 20px, 20px);
   margin-right: 25px;
