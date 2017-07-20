@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final 6</title>
     <!--<link rel="stylesheet" href="/static/materialize-css/dist/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
@@ -9,42 +10,50 @@
   </head>
   <body>
 
-    <div class="container-fluid color__moradoClaro padding--secciones">
+    <div class="container-fluid color__moradoClaro ">
       <div class="row ">
         <div class="col s1 offset-s11 col xl1 offset-xl11">
-          <img src="../img/icons/engine.png" alt="">
+          <img src="../img/icons/engine.png" class="responsive-img" alt="">
         </div>
       </div>
 
       <div class="row ">
         <div class="col s4 offset-s4 col xl4 offset-xl4">
-          <img src="../img/icons/happy-face.png" alt="">
+          <img src="../img/icons/happy-face.png" class="responsive-img" alt="">
         </div>
       </div>
 
       <div class="row margen--abajo">
         <div class="col s4 offset-s4 col xl4 offset-xl4">
-          <h2 class="texto--center letra--negra texto--center white-text">Hola</h2>
-          <img src="../img/icons/eye.png" alt=""><h3 class="texto--center letra__color-azul">Mostrar Saldo</h3>
+          <h2 class="texto--center letra--negra  white-text">Hola</h2>
         </div>
       </div>
 
+      <div class="row margen--abajo">
+        <div class="col s1 offset-s4 col xl1 offset-xl4">
+          <img src="../img/icons/eye.png" id="imagen__ojo" alt="">
+        </div>
+        <div class="col s4 col xl4 ">
+          <h3 class="texto--center letra__color-azul margen--arriba">Mostrar Saldo</h3>
+        </div>
+
+      </div>
     </div>
 
-    <div class="container-fluid color__moradoFuerte padding--secciones">
+    <div class="container-fluid color__moradoFuerte ">
       <div class="row padding--moradoFuerte">
-        <div class="col s8  col xl5">
+        <div class="col s10  col xl10">
           <h2 class="white-text">ULTIMOS MOMENTOS</h2>
         </div>
-        <div class="col s1 offset-s3 col xl1 offset-xl3">
-          <img src="../img/icons/engine.png" alt="">
+        <div class="col s1 offset-s1 col xl1 offset-xl1">
+          <img src="../img/icons/engine.png" class="responsive-img" alt="">
         </div>
         <hr>
       </div>
 
       <div class="row">
         <div class="col s5 col xl5">
-          <img src="../img/icons/icon.png" alt="">
+          <img src="../img/icons/icon.png" class="responsive-img" alt="">
         </div>
         <div class="col s5 col xl5 ">
           <h2>¿Aun no realizas tu primer pago?</h2>
@@ -55,12 +64,12 @@
       <div class="row padding--botones">
 
         <div class="col s4 offset-s1 col xl4 offset-xl1 ">
-          <img src="../img/icons/send.png" alt="" class="margen-izquierdo--circulo">
+          <img src="../img/icons/send.png" alt="" class="responsive-img margen-izquierdo--circulo">
           <h3 class="texto--center white-text">ENVIAR PAGO</h3>
 
         </div>
         <div class="col s4 offset-s2 col xl4 offset-xl2">
-          <img src="../img/icons/code-qr.png" alt="" class="margen-izquierdo--circulo">
+          <img src="../img/icons/code-qr.png" alt="" class="responsive-img margen-izquierdo--circulo">
           <h3 class="texto--center white-text">RECIBIR PAGO</h3>
 
         </div>

@@ -1,5 +1,10 @@
 @import 'variables';//importa del documento
 @import 'mixin';
+@import 'movil';
+
+* {
+  margin: 0 auto;
+  padding: 0; }
 
 .contenedor__margen--arriba{
   margin-top: 30%;
@@ -51,15 +56,20 @@
   padding-bottom: 5%;
     padding-top: 15%;
 }
+.margen--arriba{
+  margin-top: 0;
+}
 .margen--abajo{
   margin-bottom: 0 ;
 }
 hr{
   width: 100%;
 }
+
 div.carousel.carousel-slider{
-    height: 25vh !important;
-    margin-top: 10vh;
+    height: 50vh !important;
+    margin-top: 5vh;
+    width: 100%;
 }
 
 .carousel .indicators .indicator-item {
