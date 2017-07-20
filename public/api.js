@@ -1,73 +1,46 @@
+/* para trabajar en la api
 
+ url: http//localhost:3000/api/registerNumber
+ metodo http: POST
+ data: {"phone":"...","terms": "..."}
 
-// funcion de materalixe para el carrusel
+// COMO FUNCIONA EL api
+// Para cualquier peticion asincronoa son tres cosas principales: la url (el endpoint):
+// http://localhost:3000/api/registerNumber --> ek puerto depende de si levantamos dos o no
+// lo segundo es saber qué metodo utiliza la url: get, post delete.
+// Post: siginifica que le metodo http es post, depende lo que diga el api.
+// Lo tercero es que DATA se necesita, que información se necesita enviar en cada request.
+// el req.body tiene toda la data que necesitamos, toda la data que se nvia se envia a traves de un json, es decir, a través de un objetos
+// {"phone":"...","terms":"..."}los valores son los input en el phone y el check en termino y condiciones
+// form-urlencoded.
 
-$(document).ready(function(){
-      $('.carousel').carousel();
-});
+ $.post(url, data(siempre es un objeto) y callbacks)
+// Deferred object son las promesas de jquery
+//
+// $.post( url, {
+//   "phone":"455354",
+//   "terms":true
+// }).then(function(response){
+//   console.log(response)
+// }).catch(function(error){
+//   console.log(error)
+// });
 
-
-var cargarPagina = function () {
-  $numeroTelefono.keyup(validarTelefono);
-  $checkbox.change(validarTelefono);
-  $formularioComienza.submit(validarTelefono);
-};
-//para validar numero y checkbox
-var $checkbox = $("#termino-condiccion");// se llama al elementos en variable global
-var $botonContinuar = $("#boton");
-var $formularioComienza = $("#formulario");
-var $numeroTelefono = $("#telefono");
-
-
-$numeroTelefono.keyup(validarTelefono);
-$checkbox.change(validarTelefono);
-
-function validarTelefono() {
-	var $longitudTel = $numeroTelefono.val().length;
-	if ($longitudTel == 10 && $checkbox.prop("checked")) {
-    console.log(checked);
-		$botonContinuar.removeClass("disabled");
-	}else{
-		$botonContinuar.addClass("disabled");
-	}
+var cargarPagina = function(){
+	Api();
 };
 
+var Api = function(){
+	$.post('http://localhost:3000/api/registerNumber',{
+		"phone":"+51986161136",
+		"terms":true
+	}).then(function(response){
+		console.log(response);
+	}).catch(function(error){
+		console.log(error);
+	});
+};
 $(document).ready(cargarPagina);
-
-/*
-var cargarPagina = function () {
-    numeroTelefono.keyup(validarTelefono);
-    checkbox.click(validarTelefono);
-
-};
-
-
-var validarTelefono = function () {
-    //condiciones para que se habilite el boton
-    if (checkbox.prop("checked") == true && numeroTelefono.val().trim().length == 10) {
-        botonContinuar.removeAttr("disabled");
-    } else if (checkbox.prop("checked") == false && $(this).val().trim().length != 10) {
-        botonContinuar.attr("disabled", true);
-    }
-};
-
-$(document).ready(cargarPagina);
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -128,4 +101,5 @@ var redireccionarPag = function(){
   location.href = "codigo.html";
 }
 $(document).ready(cargarPagina);
+
 */

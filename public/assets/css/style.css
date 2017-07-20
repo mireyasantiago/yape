@@ -15,7 +15,18 @@
     width: 20px; }
 
   .imagen--icono {
-    width: 40px; } }
+    width: 40px; }
+
+  .imagen--carrusel {
+    width: 120px !important;
+    height: 180px !important;
+    padding-top: 40px; }
+
+  h4 {
+    font-size: 1em; }
+
+  h5 {
+    font-size: .8em; } }
 * {
   margin: 0 auto;
   padding: 0; }
