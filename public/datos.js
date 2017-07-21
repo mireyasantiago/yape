@@ -10,7 +10,7 @@ var datos= function(event){
   e.preventDefault();
 
   if(usuario.checkValidity() == false){
-    alert("eroro");
+    
   }
 
 
