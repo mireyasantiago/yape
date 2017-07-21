@@ -30,15 +30,26 @@ var validarTelefono = function (e) {
 
 var api ={
   url:'http://localhost:3000/api/registerNumber'
+  urlResend: "http://localhost:3000/api/resendCode",
+  urlUser: "http://localhost:3000/api/createUser",
 };
 
 /*area para trabajar en el api*/
+// metodo http: POST --con este metodo se envian datos al servidor donde guardara
 var obtenerApi = function(){
   $.post(api.url ,{
     phone: numeroTelefono.val(),
-    terms: true
+    terms: true// por ser un valor fijo
   },function(response){
     alert("hola");
+    localStorage.setItem("phone", response.data.phone);
+        //localStorage.setItem("code", response.data.code);
+    localStorage.setItem("terms", response.data.terms);
+    //setItem devolvera el valor de la clave
+    alert("Codigo de validación " + localStorage.getItem("code"));
+    });
+};
+
   })
 }
 
