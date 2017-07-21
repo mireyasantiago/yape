@@ -73,10 +73,7 @@ div.carousel.carousel-slider{
 #fondo--amarillo{
   background-color: $Amarilloboton;
 }
-.carousel .indicators .indicator-item {
-  @include bloque-indicadores($Gris-bullet, 20px, 20px);
-  margin-right: 25px;
-}
+
 .carousel .indicators .indicator-item.active {
   @include bloque-indicadores( $Rojo-bullet, 20px, 20px);
   border-radius: 50%;
