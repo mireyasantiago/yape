@@ -9,7 +9,8 @@ var cargarPagina = function () {
 // cuando se ejecuten los eventos se llaman a la funcion
   numeroTelefono.keyup(validarTelefono);
   checkbox.change(validarTelefono);//el evento change(cambio) solo funciona con:textarea,input y select
-  obtenerApi();
+  botonContinuar.submit(obtenerApi);
+  //obtenerApi();
 };
 
 var validarTelefono = function (e) {
